@@ -15,9 +15,8 @@
             <div class="card sm:my-12  w-full shadow-none">
               <div class="card-body !p-10">
                 <div class="text-center mb-8">
-                  <a href="#"><img src="../assets/images/logo-dark.svg" alt="img" class="mx-auto auth-logo"/></a>
+                  <a href="#"><img src="{{ asset('assets/images/user/logo.png') }}" alt="imgdá" class="mx-auto auth-logo"/></a>
                 </div>
-                <h4 class="text-center font-medium mb-4">Login</h4>
                 @if ($errors->any())
                     <div class="alert alert-danger">
                         {{ $errors->first('login') }}

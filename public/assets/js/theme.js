@@ -324,7 +324,7 @@ function layout_change(layout) {
   dark_flag = isDark;
 
   // Update the logos to match the selected layout
-  var logoSrc = isDark ? '../assets/user/logo.png' : '../assets/images/logo-dark.svg';
+  var logoSrc = isDark ? '../assets/images/user/logo.png' : '../assets/images/user/logo.png';
 
   // Helper function to update a specific element's logo if it exists
   function updateLogo(selector) {
@@ -390,7 +390,7 @@ function layout_theme_sidebar_change(value) {
   if (value == 'true') {
     document.getElementsByTagName('html')[0].setAttribute('data-pc-sidebar_theme', 'true');
     if (document.querySelector('.pc-sidebar .m-header .logo-lg')) {
-      document.querySelector('.pc-sidebar .m-header .logo-lg').setAttribute('src', '../assets/images/logo-dark.svg');
+      document.querySelector('.pc-sidebar .m-header .logo-lg').setAttribute('src', '../assets/images/user/logo.png');
     }
     var control = document.querySelector('.theme-nav-layout .btn.active');
     if (control) {
@@ -400,7 +400,7 @@ function layout_theme_sidebar_change(value) {
   } else {
     document.getElementsByTagName('html')[0].setAttribute('data-pc-sidebar_theme', 'false');
     if (document.querySelector('.pc-sidebar .m-header .logo-lg')) {
-      document.querySelector('.pc-sidebar .m-header .logo-lg').setAttribute('src', '../assets/user/logo.png');
+      document.querySelector('.pc-sidebar .m-header .logo-lg').setAttribute('src', '../assets/images/user/logo.png');
     }
     var control = document.querySelector('.theme-nav-layout .btn.active');
     if (control) {

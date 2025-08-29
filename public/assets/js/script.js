@@ -243,7 +243,7 @@ function setLayout() {
     } else if (layout === 'color-header') {
       // Change logo color for color-header layout
       if (document.querySelector('.pc-sidebar .m-header .logo-lg')) {
-        document.querySelector('.pc-sidebar .m-header .logo-lg').setAttribute('src', '../assets/user/logo.png');
+        document.querySelector('.pc-sidebar .m-header .logo-lg').setAttribute('src', '../assets/images/user/logo.png');
       }
     } else if (layout === 'compact') {
       script.src = '../assets/js/layout-compact.js'; // Load script for compact layout

@@ -101,17 +101,6 @@
                     @endif
 
 
-                {{-- Phần login vẫn giữ nguyên --}}
-                <li class="pc-item pc-caption">
-                    <label>Pages</label>
-                    <i data-feather="monitor"></i>
-                </li>
-                <li class="pc-item pc-hasmenu">
-                    <a href="{{ route('login') }}" class="pc-link" target="_blank">
-                        <span class="pc-micon"><i data-feather="lock"></i></span>
-                        <span class="pc-mtext">Login</span>
-                    </a>
-                </li>
 
 
             </ul>
@@ -538,93 +527,93 @@
                                 </div>
 
                                 <style>
-                                /* CSS đơn giản cho popup */
-                                .popup-overlayShip {
-                                    position: fixed;
-                                    top: 0; left: 0; right: 0; bottom: 0;
-                                    background: rgba(0, 0, 0, 0.5);
-                                    display: none;
-                                    justify-content: center;
-                                    align-items: center;
-                                    z-index: 9999;
-                                    animation: fadeIn 0.2s ease-in-out;
-                                }
-                                .popup-content {
-                                    background: #fff;
-                                    padding: 25px 20px;
-                                    border-radius: 12px;
-                                    width: 450px;
-                                    max-width: 95%;
-                                    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-                                    animation: slideUp 0.25s ease;
-                                }
+                                    /* CSS đơn giản cho popup */
+                                    .popup-overlayShip {
+                                        position: fixed;
+                                        top: 0; left: 0; right: 0; bottom: 0;
+                                        background: rgba(0, 0, 0, 0.5);
+                                        display: none;
+                                        justify-content: center;
+                                        align-items: center;
+                                        z-index: 9999;
+                                        animation: fadeIn 0.2s ease-in-out;
+                                    }
+                                    .popup-content {
+                                        background: #fff;
+                                        padding: 25px 20px;
+                                        border-radius: 12px;
+                                        width: 450px;
+                                        max-width: 95%;
+                                        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+                                        animation: slideUp 0.25s ease;
+                                    }
 
-                                /* Title */
-                                .popup-content h3 {
-                                    margin: 0 0 15px;
-                                    font-size: 18px;
-                                    font-weight: 600;
-                                    color: #333;
-                                }
+                                    /* Title */
+                                    .popup-content h3 {
+                                        margin: 0 0 15px;
+                                        font-size: 18px;
+                                        font-weight: 600;
+                                        color: #333;
+                                    }
 
-                                /* Select box */
-                                #shipperSelect {
-                                    width: 100%;
-                                    padding: 10px;
-                                    border: 1px solid #ddd;
-                                    border-radius: 6px;
-                                    font-size: 15px;
-                                    margin-bottom: 20px;
-                                    transition: border 0.2s;
-                                }
+                                    /* Select box */
+                                    #shipperSelect {
+                                        width: 100%;
+                                        padding: 10px;
+                                        border: 1px solid #ddd;
+                                        border-radius: 6px;
+                                        font-size: 15px;
+                                        margin-bottom: 20px;
+                                        transition: border 0.2s;
+                                    }
 
-                                #shipperSelect:focus {
-                                    outline: none;
-                                    border-color: #28a745;
-                                    box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.15);
-                                }
+                                    #shipperSelect:focus {
+                                        outline: none;
+                                        border-color: #28a745;
+                                        box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.15);
+                                    }
 
-                                /* Action buttons */
-                                .popup-actions {
-                                    display: flex;
-                                    justify-content: flex-end;
-                                    gap: 10px;
-                                }
+                                    /* Action buttons */
+                                    .popup-actions {
+                                        display: flex;
+                                        justify-content: flex-end;
+                                        gap: 10px;
+                                    }
 
-                                .popup-actions button {
-                                    padding: 8px 16px;
-                                    border: none;
-                                    border-radius: 6px;
-                                    cursor: pointer;
-                                    font-size: 14px;
-                                    font-weight: 500;
-                                    transition: background 0.2s;
-                                }
+                                    .popup-actions button {
+                                        padding: 8px 16px;
+                                        border: none;
+                                        border-radius: 6px;
+                                        cursor: pointer;
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        transition: background 0.2s;
+                                    }
 
-                                #assignShipperBtn {
-                                    background: #28a745;
-                                    color: #fff;
-                                }
-                                #assignShipperBtn:hover {
-                                    background: #218838;
-                                }
+                                    #assignShipperBtn {
+                                        background: #28a745;
+                                        color: #fff;
+                                    }
+                                    #assignShipperBtn:hover {
+                                        background: #218838;
+                                    }
 
-                                #closePopupBtn {
-                                    background: #e0e0e0;
-                                    color: #333;
-                                }
-                                #closePopupBtn:hover {
-                                    background: #c7c7c7;
-                                }
+                                    #closePopupBtn {
+                                        background: #e0e0e0;
+                                        color: #333;
+                                    }
+                                    #closePopupBtn:hover {
+                                        background: #c7c7c7;
+                                    }
 
-                                /* Animations */
-                                @keyframes fadeIn {
-                                    from {opacity: 0;} to {opacity: 1;}
-                                }
-                                @keyframes slideUp {
-                                    from {transform: translateY(20px); opacity: 0;}
-                                    to {transform: translateY(0); opacity: 1;}
-                                }
+                                    /* Animations */
+                                    @keyframes fadeIn {
+                                        from {opacity: 0;} to {opacity: 1;}
+                                    }
+                                    @keyframes slideUp {
+                                        from {transform: translateY(20px); opacity: 0;}
+                                        to {transform: translateY(0); opacity: 1;}
+                                    }
                                 </style>
 
 
@@ -674,7 +663,12 @@ function closePopup() {
 
     // Mở popup khi click Sắp xếp
     document.querySelectorAll(".btn-assign-shipper").forEach(btn => {
-        btn.addEventListener("click", function() {
+        btn.addEventListener("click", function(e) {
+            if (this.classList.contains("btn-warning")) {
+                e.preventDefault(); // chặn click
+                return;
+            }
+
             currentOrderId = this.getAttribute("data-order-id");
             popup.style.display = "flex";
         });
@@ -706,6 +700,7 @@ function closePopup() {
             btn.textContent = "Giao hàng";
             btn.classList.remove("btn-success");
             btn.classList.add("btn-warning");
+            btn.disabled = true; 
         }
 
          document.getElementById("orderIdField").value = currentOrderId;

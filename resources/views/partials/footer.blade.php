@@ -6,7 +6,6 @@
             
           </div>
           <div class="col-span-12 sm:col-span-6 my-1 justify-self-end">
-                   <p class="inline-block max-sm:mr-3 sm:ml-2">Distributed by <a href="https://themewagon.com/" target="_blank">Themewagon</a></p>
           </div>
         </div>
       </div>

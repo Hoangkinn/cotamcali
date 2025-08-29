@@ -101,18 +101,6 @@
                     @endif
 
 
-                {{-- Phần login vẫn giữ nguyên --}}
-                <li class="pc-item pc-caption">
-                    <label>Pages</label>
-                    <i data-feather="monitor"></i>
-                </li>
-                <li class="pc-item pc-hasmenu">
-                    <a href="{{ route('login') }}" class="pc-link" target="_blank">
-                        <span class="pc-micon"><i data-feather="lock"></i></span>
-                        <span class="pc-mtext">Login</span>
-                    </a>
-                </li>
-
 
             </ul>
         </div>

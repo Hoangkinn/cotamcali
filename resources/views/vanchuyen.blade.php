@@ -102,18 +102,6 @@
                     @endif
 
 
-                {{-- Phần login vẫn giữ nguyên --}}
-                <li class="pc-item pc-caption">
-                    <label>Pages</label>
-                    <i data-feather="monitor"></i>
-                </li>
-                <li class="pc-item pc-hasmenu">
-                    <a href="{{ route('login') }}" class="pc-link" target="_blank">
-                        <span class="pc-micon"><i data-feather="lock"></i></span>
-                        <span class="pc-mtext">Login</span>
-                    </a>
-                </li>
-
 
             </ul>
         </div>
@@ -466,16 +454,18 @@
 </form>
 <!-- Popup -->
 <div id="statusPopup" style="display:none; position:fixed; top:30%; left:50%; transform:translate(-50%, -30%);
-    background:#fff; border:1px solid #ddd; padding:20px; border-radius:10px; z-index:1000;">
-    <h5>Chọn trạng thái đơn hàng</h5>
-    <select id="statusSelect" class="form-select mt-2">
-        <option value="2">Giao hàng</option>
-        <option value="3">Đã giao</option>
-        <option value="4">Khách hủy</option>
-    </select>
-    <div class="mt-3 text-end">
-        <button type="button" id="cancelPopup" class="btn btn-secondary btn-sm">Hủy</button>
-        <button type="button" id="confirmPopup" class="btn btn-primary btn-sm">Xác nhận</button>
+     border-radius:10px; z-index:1000;">
+    <div class="popup-content">
+        <h5 style="margin-bottom: 20px">Chọn trạng thái đơn hàng</h5>
+        <select id="statusSelect" class="form-select mt-2">
+            <option value="2">Giao hàng</option>
+            <option value="3">Đã giao</option>
+            <option value="4">Khách hủy</option>
+        </select>
+        <div class="mt-3 text-end" style="text-align: right;">
+            <button type="button" id="cancelPopup" class="btn btn-secondary btn-sm">Hủy</button>
+            <button type="button" id="confirmPopup" class="btn btn-primary btn-sm">Xác nhận</button>
+        </div>
     </div>
 </div>
 
@@ -491,13 +481,13 @@
                                     animation: fadeIn 0.2s ease-in-out;
                                 }
                                 .popup-content {
-                                    background: #fff;
-                                    padding: 25px 20px;
-                                    border-radius: 12px;
-                                    width: 450px;
-                                    max-width: 95%;
-                                    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-                                    animation: slideUp 0.25s ease;
+                                        background: #fff;
+                                        padding: 25px 20px;
+                                        border-radius: 12px;
+                                        width: 450px;
+                                        max-width: 95%;
+                                        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+                                        animation: slideUp 0.25s ease;
                                 }
     
                                 /* Title */
